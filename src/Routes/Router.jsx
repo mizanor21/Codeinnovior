@@ -4,6 +4,8 @@ import MainLayouts from "../Layouts/MainLayouts";
 import Home from "../Components/Home/Home";
 import About from "../Components/Others/About/About";
 import Contact from "../Components/Others/Contact/Contact";
+import Signin from "../Components/Authentication/Signin";
+import Signup from "../Components/Authentication/Signup";
 
 const router = createBrowserRouter([
   {
@@ -22,6 +24,14 @@ const router = createBrowserRouter([
       {
         path: "/contact",
         element: <Contact></Contact>,
+      },
+      {
+        path: "/signin",
+        element: <Signin></Signin>,
+      },
+      {
+        path: "/signup",
+        element: <Signup></Signup>,
       },
     ],
   },

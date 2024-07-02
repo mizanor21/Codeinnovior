@@ -62,7 +62,9 @@ const Navbar = () => {
         <ul className="menu menu-horizontal flex gap-2 uppercase">{navItem}</ul>
       </div>
       <div className="navbar-end">
-        <Link className="btn">Login</Link>
+        <Link to={"/signin"} className="uppercase btn">
+          Sign in
+        </Link>
       </div>
     </div>
   );
